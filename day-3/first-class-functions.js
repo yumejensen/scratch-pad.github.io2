@@ -14,7 +14,9 @@
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-    
+    return function(value){
+        return value < base;
+    }
     
     
     // YOUR CODE ABOVE HERE //
@@ -23,12 +25,12 @@ function createGreaterThanFilter(base) {
 /** 
  * Given an input base to test against, which could be a String or Number, 
  * return a Function that tests whether a given value is less than the 
- * base.
+ * base. (test means return true or false)
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-    
+   
     
     
     // YOUR CODE ABOVE HERE //
@@ -78,6 +80,9 @@ function modifyStrings(strings, modify) {
     // YOUR CODE ABOVE HERE //
 }
 
+modifyStrings(['a', 'b', 'c'], function(string) { return string.toUpperCase()});
+// ['A', 'B', 'C']
+
 /** 
  * Given an Array of Strings and a Function designed to test the String in some 
  * way and return a Boolean on whether it passed, return true if ALL Strings pass the test.
@@ -95,6 +100,12 @@ function allStringsPass(strings, test) {
     
     // YOUR CODE ABOVE HERE //
 }
+
+allStringsPass(['alex', 'francis', 'aaron'], function(string) {return string[0] === 'a'});
+// return false (because francis doesn't begin with 'a')
+
+allStringsPass(['alex', 'arthur', 'aaron'], function(str){ return str[0] === 'a'});
+// return true (because all values begin with 'a')
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

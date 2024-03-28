@@ -11,6 +11,8 @@
  * 
  * TIP: In JavaScript, how can we decipher if a value is an Array? Can typeof
  * work?
+ * 
+ * HINT: There is a method that can help with this.
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
@@ -28,15 +30,25 @@ function isArray(value) {
  * TIP: In JavaScript, how can we decipher if a value is an Object, but not 
  * null, not an Array, not a Date - all of these will return 'object' if used 
  * with typeof.
+ * 
+ * HINT: Search "how to determine if something is an instance of the date object"
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
-    
+    if (typeof value === 'object' && /NOT null/ && /NOT an array/ && /NOT date/){
+
+    }
     
     
     // YOUR CODE ABOVE HERE //
 }
+
+isObject({ a: 1, b: 2 }); // true
+isObject([1, 2, 3]); // false
+isObject(new Date()); // false
+isObject(null); // false
+
 
 /** 
  * Given an input value, return true if is either an Array or an an Object 
