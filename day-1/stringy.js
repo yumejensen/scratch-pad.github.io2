@@ -13,19 +13,10 @@
  * work?
  */
 
-/*
-I: Function takes in a string
-O: Function returns the lenght of the string.
-C:
-E:
 
-*/
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-
-    // return the input string's length property
-    return string;
 
 
     // YOUR CODE ABOVE HERE //
