@@ -15,8 +15,6 @@
 function length(string) {
     // YOUR CODE BELOW HERE //
    
-    // return the input string's length property
-    return string.length;
     // YOUR CODE ABOVE HERE //
 }
 

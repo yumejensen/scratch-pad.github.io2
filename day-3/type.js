@@ -31,23 +31,16 @@ function isArray(value) {
  * null, not an Array, not a Date - all of these will return 'object' if used 
  * with typeof.
  * 
- * HINT: Search "how to determine if something is an instance of the date object"
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
-    if (typeof value === 'object' && /NOT null/ && /NOT an array/ && /NOT date/){
 
-    }
     
     
     // YOUR CODE ABOVE HERE //
 }
 
-isObject({ a: 1, b: 2 }); // true
-isObject([1, 2, 3]); // false
-isObject(new Date()); // false
-isObject(null); // false
 
 
 /** 
