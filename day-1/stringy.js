@@ -13,18 +13,12 @@
  * work?
  */
 
-/*
-I: Function takes in a string.
-O: Function outputs the length of the input string.
-C: N/A
-E: N/A
-*/
+
 
 function length(string) {
     // YOUR CODE BELOW HERE //
 
-    // return the length property of the input string
-    return string.length;
+    
 
     // YOUR CODE ABOVE HERE //
 }
@@ -34,9 +28,7 @@ function length(string) {
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-    console.log("lowerCase() starts here")
-    console.log(string);
-
+   
 
     // YOUR CODE ABOVE HERE //
 }
