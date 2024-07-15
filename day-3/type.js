@@ -23,6 +23,8 @@ function isArray(value) {
     // YOUR CODE ABOVE HERE //
 }
 
+
+
 /** 
  * Given an input value, return true if the value is an Object intended as a 
  * collection, false if otherwise.
@@ -31,17 +33,24 @@ function isArray(value) {
  * null, not an Array, not a Date - all of these will return 'object' if used 
  * with typeof.
  * 
+ * HINT: look up how to figure out if something is an instance of the Date object.
+ * 
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
+    if (typeof value === 'object' && /not an array/ && /not null/ && /not an instance of date/){
 
+    }
+    
     
     
     // YOUR CODE ABOVE HERE //
 }
 
-
+isObject({ a: 1, b: 1 }); // true
+isObject([1, 2]); // false
+isObject(null); // false
 
 /** 
  * Given an input value, return true if is either an Array or an an Object 

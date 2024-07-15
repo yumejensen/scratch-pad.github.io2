@@ -14,7 +14,9 @@
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-   
+    return function(){
+
+    }
     
     // YOUR CODE ABOVE HERE //
 }
@@ -23,11 +25,14 @@ function createGreaterThanFilter(base) {
  * Given an input base to test against, which could be a String or Number, 
  * return a Function that tests whether a given value is less than the 
  * base. (test means return true or false)
+ * 
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-   
+   return function(){
+
+   }
     
     
     // YOUR CODE ABOVE HERE //
@@ -37,6 +42,8 @@ function createLessThanFilter(base) {
  * Given a startsWith character, which will be a single character, return a 
  * Function that tests whether a given String starts with the startsWith 
  * character.
+ * 
+ * This function needs to be case insensitive.
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
@@ -51,6 +58,8 @@ function createStartsWithFilter(startsWith) {
  * Given a endsWith character, which will be a single character, return a 
  * Function that tests whether a given String ends with the endsWith 
  * character.
+ * 
+ * This function needs to be case insensitive.
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
@@ -77,6 +86,11 @@ function modifyStrings(strings, modify) {
     // YOUR CODE ABOVE HERE //
 }
 
+modifyStrings(['alex', 'francis', 'aaron'], function(string) { return string + "!"});
+// RETURNS => ['alex!', 'francis!', 'aaron!']
+
+modifyStrings(['alex', 'francis', 'aaron'], function(string){ return string.toUpperCase()});
+// RETURNS => ['ALEX', 'FRANCIS', 'AARON']
 
 
 /** 
@@ -96,6 +110,8 @@ function allStringsPass(strings, test) {
     
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
