@@ -39,18 +39,14 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
-    if (typeof value === 'object' && /not an array/ && /not null/ && /not an instance of date/){
 
-    }
     
     
     
     // YOUR CODE ABOVE HERE //
 }
 
-isObject({ a: 1, b: 1 }); // true
-isObject([1, 2]); // false
-isObject(null); // false
+
 
 /** 
  * Given an input value, return true if is either an Array or an an Object 

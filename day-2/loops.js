@@ -37,13 +37,7 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-   //create a storage array
-   var sto = [];
-   //call to the elements of the object
-   for (var key in object) {
-    sto.push(key);
-   }
-  return sto;
+  
 
   // YOUR CODE ABOVE HERE //
 }

@@ -14,9 +14,7 @@
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-    return function(){
-
-    }
+   
     
     // YOUR CODE ABOVE HERE //
 }
@@ -30,9 +28,7 @@ function createGreaterThanFilter(base) {
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-   return function(){
-
-   }
+  
     
     
     // YOUR CODE ABOVE HERE //
@@ -86,11 +82,7 @@ function modifyStrings(strings, modify) {
     // YOUR CODE ABOVE HERE //
 }
 
-modifyStrings(['alex', 'francis', 'aaron'], function(string) { return string + "!"});
-// RETURNS => ['alex!', 'francis!', 'aaron!']
 
-modifyStrings(['alex', 'francis', 'aaron'], function(string){ return string.toUpperCase()});
-// RETURNS => ['ALEX', 'FRANCIS', 'AARON']
 
 
 /** 
