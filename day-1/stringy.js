@@ -12,10 +12,6 @@
  * TIP: In JavaScript, how can we decipher the length of a String?
  * work?
  */
-
-
-
-
 function length(string) {
     // YOUR CODE BELOW HERE //
 
@@ -23,6 +19,8 @@ function length(string) {
     
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given an input String, return a new String forced to lowercase.
@@ -155,7 +153,7 @@ function longest(stringOne, stringTwo) {
 }
 
 /**
- * Given two Strings, return 1 if the first is higher in alphabetical order than
+ * Given two Strings, return 1 if the first string is higher in alphabetical order (meaning earlier in the alphabet) than
  * the second, return -1 if the second is higher in alphabetical order than the
  * first, and return 0 if they're equal.
  *
@@ -164,14 +162,12 @@ function longest(stringOne, stringTwo) {
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
-
     // YOUR CODE ABOVE HERE //
 }
 
 
 /**
- * Given two Strings, return 1 if the first is lower in alphabetical order than
+ * Given two Strings, return 1 if the first is lower in alphabetical order (meaning later in the alphabet) than
  * the second, return -1 if the second is lower in alphabetical order than the
  * first, and return 0 if they're equal.
  *
