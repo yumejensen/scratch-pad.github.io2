@@ -16,22 +16,37 @@ function length(string) {
     // YOUR CODE BELOW HERE //
     // return input string's length
     return string.length;
-
     // YOUR CODE ABOVE HERE //
 }
-
 
 
 /**
  * Given an input String, return a new String forced to lowercase.
+ * I: A string
+ * O: The inputted string in lowercase
+ * C: N/A
+ * E: If input string is empty, return null
  */
+
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
+    // make variable answer
+    var answer;
+   // if input string is empty, answer is null
+   if (string === ""){
+    answer = null;
+    // if string is not empty, answer is number
+   } else { 
+    answer = string.toLowerCase();
+   }
+   // return answer
+   return answer;
 
 
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given an input String, return a new String forced to uppercase.
