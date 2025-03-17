@@ -1,4 +1,3 @@
-const { expect } = require("chai");
 
 describe("#stringy", function () {
     beforeEach(function () {
