@@ -30,32 +30,23 @@ function length(string) {
 
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-    // make variable answer
-    var answer;
-   // if input string is empty, answer is null
-   if (string === ""){
-    answer = null;
-    // if string is not empty, answer is number
-   } else { 
-    answer = string.toLowerCase();
-   }
-   // return answer
-   return answer;
-
-
+    //return string in lower case
+   return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
 
 
-
 /**
  * Given an input String, return a new String forced to uppercase.
+ * I: A string
+ * O: A string made into upper case
+ * C: N/A
+ * E: N/A
  */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+    // return string made into upper case
+    return string.toUpperCase();
     // YOUR CODE ABOVE HERE //
 }
 
