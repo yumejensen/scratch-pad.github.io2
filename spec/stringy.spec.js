@@ -1,3 +1,5 @@
+const { expect } = require("chai");
+
 describe("#stringy", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
@@ -18,6 +20,9 @@ describe("#stringy", function () {
         it('should return a lowercase version of the input String', function() {
             expect(toLowerCase('HELLO')).to.equal('hello');
             expect(toLowerCase('GOODBYE')).to.equal('goodbye');
+        });
+        it('should return null if the input string is empty', function () {
+            expect(toLowerCase("").to.equal(null));
         });
     });
     

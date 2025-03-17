@@ -52,7 +52,7 @@ function makeContactList() {
     }
 }
 
-makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
+
 
 
 

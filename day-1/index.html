@@ -3,16 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mocha Spec Runner</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.css">
+  <title>Mocha Tests | Day 1</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/OperationSpark/mocha-style@main/mocha.css"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/gh/OperationSpark/mocha-style@main/injectStyles.js"
+    runMocha
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/11.1.0/mocha.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.5.0/chai.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/19.0.2/sinon.min.js"></script>
+  <!-- <script src="node_modules/mocha/mocha.js"></script>
+  <script src="node_modules/chai/chai.js"></script>
+  <script src="node_modules/lodash/lodash.js"></script>
+  <script src="node_modules/sinon/pkg/sinon.js"></script> -->
 </head>
 <body>
   <div id="mocha"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/11.1.0/mocha.min.js"></script>
   <script>mocha.setup('')</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.4.0/lodash.min.js"></script>
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/4.0.0/sinon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.5.0/chai.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/19.0.2/sinon.min.js"></script> -->
   <script>
     var assert = chai.assert;
     var expect = chai.expect;
@@ -29,6 +47,6 @@
   <script src="../spec/stringy.spec.js"></script>
   <script src="../spec/reverse-string.spec.js"></script>
 
-  <script>mocha.run()</script>
+  <!-- <script>mocha.run()</script> -->
 </body>
 </html>
