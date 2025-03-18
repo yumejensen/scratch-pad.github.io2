@@ -234,9 +234,21 @@ if (stringOne.length > stringTwo.length){
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
 function sortAscending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-    // YOUR CODE ABOVE HERE //
+  // YOUR CODE BELOW HERE //
+// make variable output
+var output;
+// if stringOne is higher alphabetically, output is 1
+// use comparison operator < to check whether stringOne is higher alphabetically
+if (stringOne < stringTwo){
+  output = 1;
+  // use comparison operator > to check whether stringOne is lower alphabetically
+} else if (stringOne > stringTwo){
+  output = -1;
+} else if (stringOne = stringTwo){
+  output = 0;
+}
+return output;
+  // YOUR CODE ABOVE HERE //
 }
 
 
