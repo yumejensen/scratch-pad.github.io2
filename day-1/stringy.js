@@ -99,8 +99,9 @@ function toDashCase(string) {
  * I: A string and a single character
  * O: Boolean: true if first letter of string and single letter equal, false if not
  * C: N/A
- * E: N/A
+ * E: Both upper and lower case are valid
  */
+
 function beginsWith(string, char) {
     // variable for 1st letter of the string
     var firstLetter = string[0];
@@ -134,27 +135,51 @@ function beginsWith(string, char) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
+ * I: A string and a single character
+ * O: Boolean: true if last letter of string and single letter equal, false if not
+ * C: N/A
+ * E: Both upper and lower case valid
  */
+
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-
+ // variable for last letter
+  var lastLetter = string[string.length-1];
+  // variable for boolean output
+  var answer;
+  
+  // make variables for upper case and lower case char
+  var upperChar = char.toUpperCase();
+  var lowerChar = char.toLowerCase();
+  
+  // if firstLetter === upper or lower char, answer is true
+  if (lastLetter === upperChar || lastLetter === lowerChar) {
+    answer = true;
+  } else {
+    answer = false;
+  }
+  // return answer
+  return answer;
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given two input Strings, return the Strings concatenated into one.
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+  // return stringOne concatenated with stringTwo
+  return stringOne + stringTwo;
 
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given any number of Strings, return all of them joined together.
