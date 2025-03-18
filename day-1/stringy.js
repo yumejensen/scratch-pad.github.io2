@@ -50,6 +50,7 @@ function toUpperCase(string) {
     // YOUR CODE ABOVE HERE //
 }
 
+
 /**
  * Given an input String, return a new String forced to dash-case.
  *
@@ -62,14 +63,23 @@ function toUpperCase(string) {
  *      methods split and join?
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
+ * 
+ * I: A string
+ * O: The same string forced to dash-case ex: "Hello World" -> 'hello-world'
+ * C: Try using String methods split and join or use global replace
+ * E: N/A
  */
+
+
 function toDashCase(string) {
-    // YOUR CODE BELOW HERE //
+    // make variable for holding parameter string
+    // change string to lower case
+    var answer = string.toLowerCase();
+    // use replace method to replace the spaces with a dash
+    answer = answer.replace(/\s+/g, "-");
+    return answer;
+  }
 
-
-
-    // YOUR CODE ABOVE HERE //
-}
 
 /**
  * Given an input String and a single character, return true if the String
