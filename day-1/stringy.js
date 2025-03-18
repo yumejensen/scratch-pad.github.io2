@@ -199,6 +199,8 @@ function join(stringOne, stringTwo) {
     // YOUR CODE ABOVE HERE //
 }
 
+
+
 /**
  * Given two Strings, return the longest of the two.
  *
@@ -209,12 +211,20 @@ function join(stringOne, stringTwo) {
  * TIP: What property of the String do we need to compare?
  */
 function longest(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+  // YOUR CODE BELOW HERE //
+// variable for answer
+var answer;
+// if string one is longer return it, if not return string two
+if (stringOne.length > stringTwo.length){
+  answer = stringOne;
+} else {
+  answer = stringTwo;
 }
+  return answer;
+  // YOUR CODE ABOVE HERE //
+}
+
+
 
 /**
  * Given two Strings, return 1 if the first string is higher in alphabetical order (meaning earlier in the alphabet) than
