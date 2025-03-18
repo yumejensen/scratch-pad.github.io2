@@ -20,6 +20,7 @@ function length(string) {
 }
 
 
+
 /**
  * Given an input String, return a new String forced to lowercase.
  * I: A string
@@ -36,6 +37,7 @@ function toLowerCase(string) {
 }
 
 
+
 /**
  * Given an input String, return a new String forced to uppercase.
  * I: A string
@@ -43,6 +45,7 @@ function toLowerCase(string) {
  * C: N/A
  * E: N/A
  */
+
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
     // return string made into upper case
@@ -70,7 +73,6 @@ function toUpperCase(string) {
  * E: N/A
  */
 
-
 function toDashCase(string) {
     // make variable for holding parameter string
     // change string to lower case
@@ -79,6 +81,7 @@ function toDashCase(string) {
     answer = answer.replace(/\s+/g, "-");
     return answer;
   }
+
 
 
 /**
@@ -92,14 +95,33 @@ function toDashCase(string) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
+ * 
+ * I: A string and a single character
+ * O: Boolean: true if first letter of string and single letter equal, false if not
+ * C: N/A
+ * E: N/A
  */
 function beginsWith(string, char) {
-    // YOUR CODE BELOW HERE //
-
+    // variable for 1st letter of the string
+    var firstLetter = string[0];
+    // variable for boolean output
+    var answer;
     
+    // make variables for upper case and lower case char
+    var upperChar = char.toUpperCase();
+    var lowerChar = char.toLowerCase();
+    
+    // if firstLetter === upper or lower char, answer is true
+    if (firstLetter === upperChar || firstLetter === lowerChar) {
+      answer = true;
+    } else {
+      answer = false;
+    }
+    // return answer
+    return answer;
+  }
 
-    // YOUR CODE ABOVE HERE //
-}
+
 
 /**
  * Given an input String and a single character, return true if the String
