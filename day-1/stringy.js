@@ -190,13 +190,16 @@ function concat(stringOne, stringTwo) {
  *
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
+ I: Strings
+ O: All inputed strings joined together ex: ("my", "name") -> "myname"
  */
-function join(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
-
-
-    // YOUR CODE ABOVE HERE //
+ function join(stringOne, stringTwo) {
+  // YOUR CODE BELOW HERE //
+// variable args is an array of the inputs
+  var args = Array.from(arguments);
+// return args all joined together with no seperators
+return args.join("");
+  // YOUR CODE ABOVE HERE //
 }
 
 
