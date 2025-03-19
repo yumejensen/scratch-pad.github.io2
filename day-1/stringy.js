@@ -22,9 +22,7 @@ E: N/A
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-
-
-    
+    return string.length;
     // YOUR CODE ABOVE HERE //
 }
 
