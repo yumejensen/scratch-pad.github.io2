@@ -13,15 +13,24 @@
  * work?
  * 
  * HINT: There is a method that can help with this.
+ I: Some kind of data type
+ O: boolean - true if data is an array and false if it's not an array
  */
+
+//var me = ["yume", "25", "new orleanian"]; // sample array
+//var yo = {name: "yume"}; // sample object
+
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+  if (Array.isArray(value)){
+    return true;
+  } else{
+    return false;
+  }
     // YOUR CODE ABOVE HERE //
 }
+//console.log(isArray(me)); // works!
+//console.log(isArray(yo)); // works!
 
 
 
@@ -35,16 +44,24 @@ function isArray(value) {
  * 
  * HINT: look up how to figure out if something is an instance of the Date object.
  * 
+ I: Some data type
+ O: Boolean - true if the data type is an object and false if not
  */
-function isObject(value) {
+ function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
-
-    
-    
-    
+    //if the value is an array return false
+  if (Array.isArray(value)){
+    return false;
+  } else if (value instanceof Date){
+    return false;
+  } else if (value === null){
+    return false;
+  } else if (typeof value === 'object'){
+    return true;
+  }
     // YOUR CODE ABOVE HERE //
 }
+
 
 
 
