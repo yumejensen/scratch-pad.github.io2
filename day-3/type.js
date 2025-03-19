@@ -73,7 +73,7 @@ function isArray(value) {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    
+    return;
     
     
     
