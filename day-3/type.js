@@ -56,6 +56,8 @@ function isArray(value) {
     return false;
   } else if (value === null){
     return false;
+  } else if (value === undefined){
+    return false;
   } else if (typeof value === 'object'){
     return true;
   }
