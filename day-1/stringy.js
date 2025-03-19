@@ -12,10 +12,19 @@
  * TIP: In JavaScript, how can we decipher the length of a String?
  * work?
  */
+
+/*
+I: Takes in a string
+O: The length of the input as a number
+C: N/A
+E: N/A
+*/
+
 function length(string) {
     // YOUR CODE BELOW HERE //
-    // return input string's length
-    return string.length;
+
+
+    
     // YOUR CODE ABOVE HERE //
 }
 

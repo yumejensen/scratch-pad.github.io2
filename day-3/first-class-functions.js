@@ -82,6 +82,12 @@ function modifyStrings(strings, modify) {
     // YOUR CODE ABOVE HERE //
 }
 
+// examples below on how to call this function
+var upperCase = modifyStrings(['a', 'b', 'c'], function(str){ return str.toUpperCase() });
+// => ['A', 'B', 'C']
+
+var addExclamation = modifyStrings(['a', 'b'], function(str){ return str + "!" });
+// => ['a!', 'b!']
 
 
 
@@ -103,7 +109,12 @@ function allStringsPass(strings, test) {
     // YOUR CODE ABOVE HERE //
 }
 
+// examples below are ways to call this function
+var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){ return str[0] === 'a'});
+// => true (begins all strings begin with 'a')
 
+var longerThan4 = allStringsPass(['alex', 'aaron'], function(str) { return str.length > 4});
+// => false (not all strings have a length greater than 4)
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
