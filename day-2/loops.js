@@ -12,10 +12,10 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  // for loop going over an array and print the values
+  for (var i = 0; i < array.length-1; i++){
+    console.log(array[i]);
+  }
   // YOUR CODE ABOVE HERE //
 }
 
