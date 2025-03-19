@@ -22,10 +22,7 @@ E: N/A
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-    
-    // return input string's length 
     return string.length;
-
     // YOUR CODE ABOVE HERE //
 }
 
@@ -33,25 +30,36 @@ function length(string) {
 
 /**
  * Given an input String, return a new String forced to lowercase.
+ * I: A string
+ * O: The inputted string in lowercase
+ * C: N/A
+ * E: If input string is empty, return null
  */
+
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
-
-
+    //return string in lower case
+   return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given an input String, return a new String forced to uppercase.
+ * I: A string
+ * O: A string made into upper case
+ * C: N/A
+ * E: N/A
  */
+
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+    // return string made into upper case
+    return string.toUpperCase();
     // YOUR CODE ABOVE HERE //
 }
+
 
 /**
  * Given an input String, return a new String forced to dash-case.
@@ -65,14 +73,23 @@ function toUpperCase(string) {
  *      methods split and join?
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
+ * 
+ * I: A string
+ * O: The same string forced to dash-case ex: "Hello World" -> 'hello-world'
+ * C: Try using String methods split and join or use global replace
+ * E: N/A
  */
+
 function toDashCase(string) {
-    // YOUR CODE BELOW HERE //
+    // make variable for holding parameter string
+    // change string to lower case
+    var answer = string.toLowerCase();
+    // use replace method to replace the spaces with a dash
+    answer = answer.replace(/\s+/g, "-");
+    return answer;
+  }
 
 
-
-    // YOUR CODE ABOVE HERE //
-}
 
 /**
  * Given an input String and a single character, return true if the String
@@ -85,14 +102,34 @@ function toDashCase(string) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
+ * 
+ * I: A string and a single character
+ * O: Boolean: true if first letter of string and single letter equal, false if not
+ * C: N/A
+ * E: Both upper and lower case are valid
  */
+
 function beginsWith(string, char) {
-    // YOUR CODE BELOW HERE //
-
+    // variable for 1st letter of the string
+    var firstLetter = string[0];
+    // variable for boolean output
+    var answer;
     
+    // make variables for upper case and lower case char
+    var upperChar = char.toUpperCase();
+    var lowerChar = char.toLowerCase();
+    
+    // if firstLetter === upper or lower char, answer is true
+    if (firstLetter === upperChar || firstLetter === lowerChar) {
+      answer = true;
+    } else {
+      answer = false;
+    }
+    // return answer
+    return answer;
+  }
 
-    // YOUR CODE ABOVE HERE //
-}
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -105,27 +142,51 @@ function beginsWith(string, char) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
+ * I: A string and a single character
+ * O: Boolean: true if last letter of string and single letter equal, false if not
+ * C: N/A
+ * E: Both upper and lower case valid
  */
+
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-
+ // variable for last letter
+  var lastLetter = string[string.length-1];
+  // variable for boolean output
+  var answer;
+  
+  // make variables for upper case and lower case char
+  var upperChar = char.toUpperCase();
+  var lowerChar = char.toLowerCase();
+  
+  // if firstLetter === upper or lower char, answer is true
+  if (lastLetter === upperChar || lastLetter === lowerChar) {
+    answer = true;
+  } else {
+    answer = false;
+  }
+  // return answer
+  return answer;
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given two input Strings, return the Strings concatenated into one.
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+  // return stringOne concatenated with stringTwo
+  return stringOne + stringTwo;
 
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given any number of Strings, return all of them joined together.
@@ -136,14 +197,19 @@ function concat(stringOne, stringTwo) {
  *
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
+ I: Strings
+ O: All inputed strings joined together ex: ("my", "name") -> "myname"
  */
-function join(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
-
-
-    // YOUR CODE ABOVE HERE //
+ function join(stringOne, stringTwo) {
+  // YOUR CODE BELOW HERE //
+// variable args is an array of the inputs
+  var args = Array.from(arguments);
+// return args all joined together with no seperators
+return args.join("");
+  // YOUR CODE ABOVE HERE //
 }
+
+
 
 /**
  * Given two Strings, return the longest of the two.
@@ -155,12 +221,20 @@ function join(stringOne, stringTwo) {
  * TIP: What property of the String do we need to compare?
  */
 function longest(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+  // YOUR CODE BELOW HERE //
+// variable for answer
+var answer;
+// if string one is longer return it, if not return string two
+if (stringOne.length > stringTwo.length){
+  answer = stringOne;
+} else {
+  answer = stringTwo;
 }
+  return answer;
+  // YOUR CODE ABOVE HERE //
+}
+
+
 
 /**
  * Given two Strings, return 1 if the first string is higher in alphabetical order (meaning earlier in the alphabet) than
@@ -170,9 +244,21 @@ function longest(stringOne, stringTwo) {
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
 function sortAscending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-    // YOUR CODE ABOVE HERE //
+  // YOUR CODE BELOW HERE //
+// make variable output
+var output;
+// if stringOne is higher alphabetically, output is 1
+// use comparison operator < to check whether stringOne is higher alphabetically
+if (stringOne < stringTwo){
+  output = 1;
+  // use comparison operator > to check whether stringOne is lower alphabetically
+} else if (stringOne > stringTwo){
+  output = -1;
+} else if (stringOne = stringTwo){
+  output = 0;
+}
+return output;
+  // YOUR CODE ABOVE HERE //
 }
 
 
@@ -184,12 +270,22 @@ function sortAscending(stringOne, stringTwo) {
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
 function sortDescending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
-
-
-    // YOUR CODE ABOVE HERE //
+  // YOUR CODE BELOW HERE //
+// make variable output
+var output;
+// if stringOne is lower alphabetically, output is 1
+// use comparison operator < to check whether stringOne is lower alphabetically
+if (stringOne > stringTwo){
+output = 1;
+// use comparison operator > to check whether stringOne is higher alphabetically, if so output = -1
+} else if (stringOne < stringTwo){
+output = -1;
+// if the strings are equal, output is 0
+} else if (stringOne = stringTwo){
+output = 0;
+}
+return output;
+// YOUR CODE ABOVE HERE //
 }
 
 
