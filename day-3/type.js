@@ -52,18 +52,21 @@ function isArray(value) {
     //if the value is an array return false
   if (Array.isArray(value)){
     return false;
+    // if the value is instanceof a Date return false
   } else if (value instanceof Date){
     return false;
+    // if the value is null return false
   } else if (value === null){
     return false;
-  } else if (value === undefined){
-    return false;
+    // else if the typeof value is 'object' return true
   } else if (typeof value === 'object'){
     return true;
+    // all else return false
+  } else {
+    return false;
   }
     // YOUR CODE ABOVE HERE //
 }
-
 
 
 
