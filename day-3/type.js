@@ -121,7 +121,7 @@ function isCollection(value) {
 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    // go through all the if statements of data types
+    // go through all the if statements of data types - return a string of the data type
   if (typeof value === 'string'){
     return 'string';
   } else if (typeof value === 'number'){
