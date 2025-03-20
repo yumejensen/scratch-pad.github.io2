@@ -2,6 +2,9 @@
 
 'use strict';
 
+//var me = ["yume", "25", "new orleanian"]; // sample array
+//var yo = {name: "yume"}; // sample object
+
 /**
  * IN CLASS EXERCISE: TYPE
  */
@@ -16,10 +19,6 @@
  I: Some kind of data type
  O: boolean - true if data is an array and false if it's not an array
  */
-
-//var me = ["yume", "25", "new orleanian"]; // sample array
-//var yo = {name: "yume"}; // sample object
-
 function isArray(value) {
     // YOUR CODE BELOW HERE //
   if (Array.isArray(value)){
@@ -118,7 +117,6 @@ function isCollection(value) {
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
  */ 
-
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
     // go through all the if statements of data types - return a string of the data type
