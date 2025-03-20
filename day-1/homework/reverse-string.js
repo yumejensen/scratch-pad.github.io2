@@ -27,7 +27,7 @@ function reverseString(input) {
     var reversedMessage = [];
     // make a for loop going over string backwards
     // push to reversedMessage array
-    for (var i = input.length-1; i === 0; i--){
+    for (var i = input.length-1; i >= 0; i--){
       reversedMessage.push(input[i]);
     }
     // use join method to turn the array into a string
