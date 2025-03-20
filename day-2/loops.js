@@ -52,10 +52,10 @@ function getObjectKeys(object) {
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  // for in loop that prints keys using Object.keys
+  for (var key in object){
+    console.log(Object.keys(object));
+  }
   // YOUR CODE ABOVE HERE //
 }
 
