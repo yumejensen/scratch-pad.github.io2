@@ -60,7 +60,19 @@ function makeContactList() {
        // addContact method to add a contact
        addContact: function(contact){
         contacts.push(contact);
-       }
+       },
+      // findContact(fullName) that returns the object with the name (if it exists)
+      findContact: function(fullName){
+        // for loop that goes over the contacts array
+        for (var i = 0; i < contacts.length; i++){
+            // need to change input of fullName into 2 parts - check nameFirst and nameLast 
+
+            // if nameFirst = 1st thing in fullName && nameLast = 2nd thing
+            if (contacts[i]['nameFirst']){
+                return contacts[i]
+            }
+        }
+      },
     }
 }
 
