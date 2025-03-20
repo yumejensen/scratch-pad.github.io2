@@ -17,18 +17,21 @@
  *     when to stop looping?
  *  c. how do you access individual characters of a String?
  *  d. how do you concatenate Strings? What operator do we use?
+ * I: String
+ * O: the string reversed
  */
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    // create holder string
-    var reversedMessage = '';
+    // create holder array
+    var reversedMessage = [];
     // make a for loop going over string backwards
-    for (i = input.length-1; i === 0; i--){
-      reversedMessage.push[i];
+    // push to reversedMessage array
+    for (var i = input.length-1; i === 0; i--){
+      reversedMessage.push(input[i]);
     }
-    return reversedMessage;
-    
+    // use join method to turn the array into a string
+    return reversedMessage.join("");
     
     // YOUR CODE GOES ABOVE HERE //
 }
