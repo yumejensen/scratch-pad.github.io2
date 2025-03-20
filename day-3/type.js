@@ -118,8 +118,10 @@ function isCollection(value) {
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
  */ 
+
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
+    // go through all the if statements of data types
   if (typeof value === 'string'){
     return 'string';
   } else if (typeof value === 'number'){
@@ -136,14 +138,14 @@ function typeOf(value) {
     return 'date';
   } else if (Array.isArray(value)){
     return 'array';
+    // use typeof for object last because the exceptions of array, null, and date are taken care of
   } else if (typeof value === 'object'){
     return 'object';
   }
     // YOUR CODE ABOVE HERE //
 }
     
-    // YOUR CODE ABOVE HERE //
-}
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
