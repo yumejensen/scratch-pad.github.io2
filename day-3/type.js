@@ -98,6 +98,7 @@ function isCollection(value) {
 }
 
 
+
 /**
  * Given an input value, return the type of the value as a String
  * 
@@ -119,9 +120,27 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    return;
-    
-    
+  if (typeof value === 'string'){
+    return 'string';
+  } else if (typeof value === 'number'){
+    return 'number';
+  } else if (typeof value === 'undefined'){
+    return 'undefined';
+  } else if (typeof value === 'boolean'){
+    return 'boolean';
+  } else if (value === null){
+    return 'null';
+  } else if (typeof value === 'function'){
+    return 'function';
+  } else if (value instanceof Date){
+    return 'date';
+  } else if (Array.isArray(value)){
+    return 'array';
+  } else if (typeof value === 'object'){
+    return 'object';
+  }
+    // YOUR CODE ABOVE HERE //
+}
     
     // YOUR CODE ABOVE HERE //
 }
