@@ -48,7 +48,14 @@ function makeContactList() {
     
     return {
         // we implemented the length api for you //
-       
+        // create a length method that when invoked returns the number of contacts
+       length: function(){
+        return contacts.length;
+       },
+       // addContact method to add a contact
+       addContact: function(contact){
+        contacts.push(contact);
+       }
     }
 }
 
