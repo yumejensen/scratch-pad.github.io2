@@ -78,12 +78,25 @@ function isArray(value) {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    return;
-    
-    
-    
+  // if Array.isArray(value) true return true
+  if (Array.isArray(value)){
+    return true;
+    //if value === null return false
+  } else if (value === null){
+    return false;
+    // if value instanceof Date return false
+  } else if (value instanceof Date){
+    return false;
+    // if typeof value is 'object' return true
+  } else if (typeof value === 'object'){
+    return true
+    // else return false
+  } else {
+    return false;
+  }
     // YOUR CODE ABOVE HERE //
 }
+
 
 /**
  * Given an input value, return the type of the value as a String
