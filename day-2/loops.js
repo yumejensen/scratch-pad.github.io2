@@ -107,18 +107,20 @@ function printObjectValues(object) {
  O: The values of the object, printed in reverse order
  */
  function printObjectValuesInReverse(object) {
-  // YOUR CODE BELOW HERE //
+  
   // create holder array for reversed values
   var reverse = [];
   // assign variable to Object.values(object) 
   var values = Object.values(object);
+  //console.log(values)
   // for loop iterating over values array and unshifting it into reverse array
-  for (i = 0; i < values.length; i++){
-    reverse.unshift(values[i]);
-  }
+    for (i = 0; i < values.length; i++){
+      console.log(reverse.unshift(values[i]));
+    }
   // print reverse
   console.log(reverse);
-  // YOUR CODE ABOVE HERE //
+  //return reverse;
+  
 }
 
 
