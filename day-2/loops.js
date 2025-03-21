@@ -64,10 +64,10 @@ function printObjectKeys(object) {
  */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  // for in loop that returns object values using Object.keys
+  for (var key in object){
+    return Object.keys(object[key]);
+  }
   // YOUR CODE ABOVE HERE //
 }
 
