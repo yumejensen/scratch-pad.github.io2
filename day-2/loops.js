@@ -112,12 +112,12 @@ function printObjectValues(object) {
   var reverse = [];
   // assign variable to Object.values(object) 
   var values = Object.values(object);
-  // for loop iterating over values array backwards and pushing it into reverse array
-  for (i = values - 1; i >= 0; i--){
-    reverse.push(values[i]);
+  // for loop iterating over values array and unshifting it into reverse array
+  for (i = 0; i < values.length; i++){
+    reverse.unshift(values[i]);
   }
   // print reverse
-  console.log(toString(reverse));
+  console.log(reverse);
   // YOUR CODE ABOVE HERE //
 }
 
