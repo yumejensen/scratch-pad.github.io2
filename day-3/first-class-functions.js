@@ -21,18 +21,24 @@ function createGreaterThanFilter(base) {
 
 /** 
  * Given an input base to test against, which could be a String or Number, 
- * return a Function that tests whether a given value is less than the 
- * base. (test means return true or false)
- * 
+ * return a Function that tests whether a given value is greater than the 
+ * base.
+ 
+ I: a string or a number (base)
+ O: return a function that tests whether something is bigger than (base)
  */
-function createLessThanFilter(base) {
-    // YOUR CODE BELOW HERE //
-    
-  
-    
-    
-    // YOUR CODE ABOVE HERE //
-}
+ function createGreaterThanFilter(base) {
+
+    // make function expression to check if 1st value is greater than 2nd??
+    var isGreaterCheck = function(x, y){
+      if (x > y){
+        return true;
+      }
+    }
+    return isGreaterCheck;
+    }
+
+
 
 /** 
  * Given a startsWith character, which will be a single character, return a 
