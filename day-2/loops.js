@@ -112,7 +112,7 @@ function printObjectKeys(object) {
   for (var key in object){
     return Object.keys(object).length;
   }
-  // YOUR CODE ABOVE HERE //
+  // YOUR CODE ABOVE HERE - code passed//
 }
 
 /** 
@@ -138,6 +138,14 @@ function printObjectKeys(object) {
   //return reverse;
   
 }
+// code failed
+
+
+
+
+
+
+
 
 
 
