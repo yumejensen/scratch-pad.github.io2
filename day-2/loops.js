@@ -65,11 +65,13 @@ function printObjectKeys(object) {
  I: object
  O: an array of the object's value ex: 
  */
- function getObjectValues(object) {
+ function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  // for in loop that returns object values using Object.values
-  for (var key in object){
-    return Object.values(object);
+  // assign variable to array of values
+  var values = Object.values(object);
+  // loop over array and console.log each value
+  for (i = 0; i < values.length; i++){
+    console.log(values[i]);
   }
   // YOUR CODE ABOVE HERE //
 }
