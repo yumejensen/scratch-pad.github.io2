@@ -53,8 +53,9 @@ function getObjectKeys(object) {
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
   // for in loop that prints keys using Object.keys
-  for (var key in object){
-    console.log(Object.keys(object));
+  var keys = Object.keys(object);
+  for (i = 0; i < keys.length; i++){
+    console.log(keys[i]);
   }
   // YOUR CODE ABOVE HERE //
 }
