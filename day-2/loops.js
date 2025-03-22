@@ -129,7 +129,7 @@ function printObjectKeys(object) {
     for (i = valuesReverse.length - 1; i >= 0; i--){
       console.log(valuesReverse[i]);
     } 
-};
+}
 
 // code failed
 
