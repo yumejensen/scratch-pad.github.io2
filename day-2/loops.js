@@ -123,21 +123,14 @@ function printObjectKeys(object) {
  O: The values of the object, printed in reverse order
  */
  function printObjectValuesInReverse(object) {
-  
-  // create holder array for reversed values
-  var reverse = [];
   // assign variable to Object.values(object) 
-  var values = Object.values(object);
-  //console.log(values)
-  // for loop iterating over values array and unshifting it into reverse array
-    for (i = 0; i < values.length; i++){
-      console.log(reverse.unshift(values[i]));
-    }
-  // print reverse
-  console.log(reverse);
-  //return reverse;
-  
-}
+  var valuesReverse = Object.values(object);
+  // for loop iterating over values array backwards and printing
+    for (i = valuesReverse.length - 1; i >= 0; i--){
+      console.log(valuesReverse[i]);
+    } 
+};
+
 // code failed
 
 
