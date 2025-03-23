@@ -12,17 +12,16 @@
  * base.
  */
 function createGreaterThanFilter(base) {
-
-    // make function expression
-    var isGreaterCheck = function isGreater(base){
-      if (base > createGreaterThanFilter(base)){
-          return true;
+    // make a variable assigned to a function that tests whether a value is greater than the base
+    // if value > base return true else return false
+    var greaterThanBase = function(value){
+      if (value > base){
+        return true;
       } else {
         return false;
       }
-    return isGreaterCheck;
-    
     }
+    return greaterThanBase;
   }
 
 
