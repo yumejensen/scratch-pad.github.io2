@@ -14,14 +14,13 @@
 function createGreaterThanFilter(base) {
     // make a variable assigned to a function that tests whether a value is greater than the base
     // if value > base return true else return false
-    var greaterThanBase = function(value){
+    return function(value){
       if (value > base){
         return true;
       } else {
         return false;
       }
     }
-    return greaterThanBase;
   }
 
 
