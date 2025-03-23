@@ -42,8 +42,8 @@ function createGreaterThanFilter(base) {
     } else {
       return false;
     }
-    return isLessThanBase;
   }  
+  return isLessThanBase;
     // YOUR CODE ABOVE HERE //
 }
 
