@@ -124,7 +124,9 @@ function createGreaterThanFilter(base) {
   // holder array to return later
   var modifiedArray = [];
   // var - function called modify that takes in strings
-  var result = modifiedArray.push(modify(strings));
+  var timeToModify = function modify(strings){
+    return modifiedArray.push(modify(strings));
+  }
   
   return modifiedArray;
   
