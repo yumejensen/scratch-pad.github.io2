@@ -115,13 +115,19 @@ function createGreaterThanFilter(base) {
  * 
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
+ 
+ I: An array of strings AND a function for modifying strings
+ O: return the array of strings, modified
  */
-function modifyStrings(strings, modify) {
+ function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+  // holder array to return later
+  var modifiedArray = [];
+  // var - function called modify that takes in strings
+  var result = modifiedArray.push(modify(strings));
+  
+  return modifiedArray;
+  
     // YOUR CODE ABOVE HERE //
 }
 
