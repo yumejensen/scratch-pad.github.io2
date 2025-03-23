@@ -12,12 +12,20 @@
  * base.
  */
 function createGreaterThanFilter(base) {
-    // YOUR CODE BELOW HERE //
+
+    // make function expression
+    var isGreaterCheck = function isGreater(base){
+      if (base > createGreaterThanFilter(base)){
+          return true;
+      } else {
+        return false;
+      }
+    return isGreaterCheck;
     
-   
-    
-    // YOUR CODE ABOVE HERE //
-}
+    }
+  }
+
+
 
 /** 
  * Given an input base to test against, which could be a String or Number, 
