@@ -95,7 +95,7 @@ function createGreaterThanFilter(base) {
  function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
   // assign variable to function(string) 
-  // function(string) tests whether last letter in string is equal to endsWith
+  // function(string) tests whether last letter in string is equal to endsWith - case insensitive
   var doesThisEndWith = function(string){
     if (string[string.length-1].toLowerCase() === endsWith.toLowerCase()){
       return true;
