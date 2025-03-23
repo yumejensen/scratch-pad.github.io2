@@ -165,12 +165,7 @@ var addExclamation = modifyStrings(['a', 'b'], function(str){ return str + "!" }
     isItTrue.push(test(strings[i]));
     // if isItTrue is true, return true - else return false
   } 
-  
-  if (isItTrue.every(test) = true){
-    return true;
-  } else {
-    return false;
-  }
+
   //return isItTrue;
   // YOUR CODE ABOVE HERE
 } 
