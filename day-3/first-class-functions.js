@@ -123,20 +123,18 @@ function createGreaterThanFilter(base) {
  */
  function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-  // holder array to return later
-  var modifiedArray = [];
-  // var modify = function takes in strings
-  var modify = function(strings){
-    // for loop that goes over strings
-    for (i = 0; i < strings.length; i++){
-      // pass in [i] into modify??
-      modify(strings[i]);
-      modifiedArray.push(strings[i]);
-    }
-  }
+   // holder array to return later
+   var modifiedArray = []; 
+   //for loop that goes over strings
+   for (var i = 0; i < strings.length; i++){
+     modifiedArray.push(modify(strings[i]));
+     
+   }
+   
+  
+
   
   return modifiedArray;
-  
     // YOUR CODE ABOVE HERE //
 }
 
