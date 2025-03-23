@@ -43,6 +43,7 @@ function createLessThanFilter(base) {
 }
 
 
+
 /** 
  * Given a startsWith character, which will be a single character, return a 
  * Function that tests whether a given String starts with the startsWith 
@@ -58,6 +59,8 @@ function createStartsWithFilter(startsWith) {
     
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /** 
  * Given a endsWith character, which will be a single character, return a 
@@ -75,6 +78,8 @@ function createEndsWithFilter(endsWith) {
     // YOUR CODE ABOVE HERE //
 }
 
+
+
 /** 
  * Given an Array of Strings and a Function designed to modify a String, 
  * return the Array of the Strings, modified.
@@ -90,6 +95,8 @@ function modifyStrings(strings, modify) {
     
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 // examples below on how to call this function
 var upperCase = modifyStrings(['a', 'b', 'c'], function(str){ return str.toUpperCase() });
