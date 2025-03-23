@@ -157,18 +157,21 @@ var addExclamation = modifyStrings(['a', 'b'], function(str){ return str + "!" }
  */
  function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-  // var allTrue
-  var allTrue;
+  // make a holder array
+  var isItTrue = [];
   // for loop going over the array of strings
   for (i = 0; i < strings.length; i++){
-    // pass strings[i] into test, if true, allTrue is true, else allTrue is false
-    if (test(strings[i])){
-      allTrue = true;
-    } else {
-      allTrue = false;
-    }
+    // pass strings[i] into test, then put into holder array
+    isItTrue.push(test(strings[i]));
+    // if isItTrue is true, return true - else return false
+  } 
+  
+  if (isItTrue.every(test) = true){
+    return true;
+  } else {
+    return false;
   }
-   return allTrue;
+  //return isItTrue;
   // YOUR CODE ABOVE HERE
 } 
 
