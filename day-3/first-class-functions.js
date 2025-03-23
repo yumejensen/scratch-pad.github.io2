@@ -69,7 +69,7 @@ function createGreaterThanFilter(base) {
   // will test if startsWith is string[0] 
   // to make it case insensitive try using if string[0].toLowerCase() === startsWith.toLowerCase() 
   var doesThisStartWith = function(string){
-    if string[0].toLowerCase() === startsWith.toLowerCase(){
+    if (string[0].toLowerCase() === startsWith.toLowerCase()){
       return true;
     } else {
       return false;
