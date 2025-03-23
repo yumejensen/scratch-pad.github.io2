@@ -162,14 +162,14 @@ var addExclamation = modifyStrings(['a', 'b'], function(str){ return str + "!" }
   // for loop going over the array of strings
   for (i = 0; i < strings.length; i++){
     // pass strings[i] into test, if true, allTrue is true, else allTrue is false
-    test(strings[i])
-  } if (test(strings[i]) = true){
-    return true;
-  } else {
-    return false
+    if (test(strings[i]) = true){
+      allTrue = true;
+    } else if (test(strings[i]) = false)
+      allTrue = false;
   }
+   return allTrue;
   // YOUR CODE ABOVE HERE
-}
+} 
 
 // examples below are ways to call this function
 var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){ return str[0] === 'a'});
