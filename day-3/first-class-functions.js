@@ -134,7 +134,6 @@ function createGreaterThanFilter(base) {
 }
 
 
-
 // examples below on how to call this function
 var upperCase = modifyStrings(['a', 'b', 'c'], function(str){ return str.toUpperCase() });
 // => ['A', 'B', 'C']
