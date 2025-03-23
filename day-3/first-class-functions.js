@@ -2,25 +2,28 @@
 
 'use strict';
 
-/**
- * IN CLASS EXERCISE: FIRST CLASS FUNCTIONS
- */
-
 /** 
+ * CREATE GREATER THAN FILTER
  * Given an input base to test against, which could be a String or Number, 
  * return a Function that tests whether a given value is greater than the 
  * base.
+ 
+ I: A string or a number (base)
+ O: A function that tests whether a given value is greater than the base
  */
+
+//first version with variable assign to my function 
 function createGreaterThanFilter(base) {
     // make a variable assigned to a function that tests whether a value is greater than the base
     // if value > base return true else return false
-    return function(value){
+    var greaterThanBase = function(value){
       if (value > base){
         return true;
       } else {
         return false;
       }
     }
+    return greaterThanBase;
   }
 
 
