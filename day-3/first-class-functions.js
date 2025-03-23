@@ -151,13 +151,21 @@ var addExclamation = modifyStrings(['a', 'b'], function(str){ return str + "!" }
  * begin with "C", or they are all exclaimations that end with "!".
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
+ 
+ I: Array of strings + a function to test the strings
+ O: A boolean - true if all the strings passed the test, false if not
  */
-function allStringsPass(strings, test) {
+ function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+  // for loop going over the array of strings
+  for (i = 0; i < strings.length; i++){
+    // pass strings[i] into test, if true, return true
+    if (test(strings[i])){
+      return true;
+    } else {
+      return false;
+    }
+  }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -167,6 +175,12 @@ var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){ return str[0]
 
 var longerThan4 = allStringsPass(['alex', 'aaron'], function(str) { return str.length > 4});
 // => false (not all strings have a length greater than 4)
+
+
+
+
+
+
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
