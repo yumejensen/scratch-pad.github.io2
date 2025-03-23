@@ -87,13 +87,23 @@ function createGreaterThanFilter(base) {
  * character.
  * 
  * This function needs to be case insensitive.
+ I: A single character
+ O: A function that tests whether a given string ends with the character
+ C: N/A
+ E: Case insensitive
  */
-function createEndsWithFilter(endsWith) {
+ function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+  // assign variable to function(string) 
+  // function(string) tests whether last letter in string is equal to endsWith
+  var doesThisEndWith = function(string){
+    if (string[string.length-1].toLowerCase() === endsWith.toLowerCase()){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  return doesThisEndWith;  
     // YOUR CODE ABOVE HERE //
 }
 
