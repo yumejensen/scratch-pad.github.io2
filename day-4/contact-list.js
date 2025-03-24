@@ -102,8 +102,8 @@ function makeContactList() {
       var listOfNames = [];  
 
       for (var i = 0; i <= contacts.length - 1; i++){
-        // make a variable called fullName that is nameFirst + " " + nameLast -> made into a string
-        var fullName = (contacts[i].nameFirst + " " + contacts[i].nameLast).toString();
+        // make a variable called fullName that is nameFirst + " " + nameLast 
+        var fullName = contacts[i].nameFirst + " " + contacts[i].nameLast;
         
         // if it's not the last one, print with a line break - if it's the last one no line break
         if (i !== contacts.length - 1){
