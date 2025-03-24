@@ -90,34 +90,30 @@ function makeContactList() {
         }
       },
       
-      //printAllContactNames - return a string of full names
+      //printAllContactNames - return a string of full names from each object
       /*
       I: contacts array
       O: list (string) of nameFirst + nameLast for each contact, separated by a line break
-      C:
-      E: the last full name should not have a new line after it
+      C: N/A
+      E: the last full name should NOT have a new line after it
       */
       printAllContactNames: function(){
         // iterate through contacts array
-        // try making a holder array for full names
-  
-      var namesToPrint = [];
+      var listOfNames = [];  
+
       for (var i = 0; i <= contacts.length - 1; i++){
-         // for each contact, print a string of nameFirst + nameLast and a line break
-  
-        // make a variable called fullName that is nameFirst + " " + nameLast
-        var fullName = contacts[i].nameFirst + " " + contacts[i].nameLast;
-  
-         // if it is NOT the last contact, have a line break - if it is print without the line break
-         // push into holder array
+        // make a variable called fullName that is nameFirst + " " + nameLast -> made into a string
+        var fullName = (contacts[i].nameFirst + " " + contacts[i].nameLast).toString();
+        
+        // if it's not the last one, print with a line break - if it's the last one no line break
         if (i !== contacts.length - 1){
-          namesToPrint.push(fullName + '<br>');
-        } else if (i === contacts.length - 1) {
-          namesToPrint.push(fullName);
+          listOfNames.push(fullName + '\n');
+        } else {
+          console.log.push(fullName);
         }
-      }
-      // print the namesToPrint array as a string
-      console.log(namesToPrint.toString());
+      }// end of for loop
+      console.log(listOfNames.toString());
+        
      }
   
   // YOUR CODE GOES ABOVE HERE //
