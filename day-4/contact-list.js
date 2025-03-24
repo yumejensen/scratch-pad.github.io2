@@ -112,6 +112,8 @@ function makeContactList() {
           listOfNames.push(fullName);
         }
       }// end of for loop
+      
+      // print listOfNames as a string
       console.log(listOfNames.toString());
         
      }
