@@ -57,25 +57,73 @@ function makeContactList() {
        length: function(){
         return contacts.length;
        },
-       // addContact method to add a contact
+       
+      // addContact method to add a contact
        addContact: function(contact){
         contacts.push(contact);
        },
+      
       // findContact(fullName) that returns the object with the name (if it exists)
-      findContact: function(fullName){
+       findContact: function(fullName){
+        var fullNameArray = fullName.split(' ');
         // for loop that goes over the contacts array
         for (var i = 0; i < contacts.length; i++){
             // need to change input of fullName into 2 parts - check nameFirst and nameLast 
-
             // if nameFirst = 1st thing in fullName && nameLast = 2nd thing
-            if (contacts[i]['nameFirst']){
+            if (contacts[i].nameFirst === fullNameArray[0] && contacts[i].nameLast === fullNameArray[1]){
                 return contacts[i]
-            }
+                // else return undefined?
+            } 
         }
+         return undefined;
+       },
+      
+      //removeContact(contact) that takes an object to be removed from the list
+      removeContact: function(contact){
+        // for loop going over contacts
+        for (var i = 0; i < contacts.length; i++){
+          if (contact === contacts[i].nameFirst){
+            // delete + splice method to isolate the contact
+            delete contacts.splice(i, 1);
+          }
+        }
+        //return contacts;
       },
-    }
-}
-
+      
+      //printAllContactNames - return a string of full names
+      /*
+      I: contacts array
+      O: list (string) of nameFirst + nameLast for each contact, separated by a line break
+      C:
+      E: the last full name should not have a new line after it
+      */
+      printAllContactNames: function(){
+        // iterate through contacts array
+        // try making a holder array for full names
+  
+      var namesToPrint = [];
+      for (var i = 0; i <= contacts.length - 1; i++){
+         // for each contact, print a string of nameFirst + nameLast and a line break
+  
+        // make a variable called fullName that is nameFirst + " " + nameLast
+        var fullName = contacts[i].nameFirst + " " + contacts[i].nameLast;
+  
+         // if it is NOT the last contact, have a line break - if it is print without the line break
+         // push into holder array
+        if (i !== contacts.length - 1){
+          namesToPrint.push(fullName + '<br>');
+        } else if (i === contacts.length - 1) {
+          namesToPrint.push(fullName);
+        }
+      }
+      // print the namesToPrint array as a string
+      console.log(namesToPrint.toString());
+     }
+  
+  // YOUR CODE GOES ABOVE HERE //
+  } // return bracket
+  
+  } // last bracket
 
 
 
