@@ -82,12 +82,13 @@ function makeContactList() {
       removeContact: function(contact){
         // for loop going over contacts
         for (var i = 0; i < contacts.length; i++){
-          if (contact === contacts[i].nameFirst){
-            // delete + splice method to isolate the contact
-            delete contacts.splice(i, 1);
+            // if input contact === first name of a contacts object
+          if (contact.nameFirst === contacts[i].nameFirst){
+            //splice method to remove the contact object
+            contacts.splice(i, 1);
           }
         }
-        //return contacts;
+        //return contacts; ?
       },
       
       //printAllContactNames - return a string of full names
