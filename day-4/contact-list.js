@@ -82,8 +82,8 @@ function makeContactList() {
       removeContact: function(contact){
         // for loop going over contacts
         for (var i = 0; i < contacts.length; i++){
-            // if input contact === first name of a contacts object
-          if (contact.nameFirst === contacts[i].nameFirst){
+            // if input contact first name/ last name === first name/ last name of contacts object
+          if (contact.nameFirst === contacts[i].nameFirst && contact.nameLast === contacts[i].nameLast){
             //splice method to remove the contact object
             contacts.splice(i, 1);
           }
