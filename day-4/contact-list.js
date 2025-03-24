@@ -107,9 +107,9 @@ function makeContactList() {
         
         // if it's not the last one, print with a line break - if it's the last one no line break
         if (i !== contacts.length - 1){
-          listOfNames.push(fullName + '\n');
+          listOfNames.push(fullName,'\n');
         } else {
-          console.log.push(fullName);
+          listOfNames.push(fullName);
         }
       }// end of for loop
       console.log(listOfNames.toString());
