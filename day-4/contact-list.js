@@ -88,7 +88,6 @@ function makeContactList() {
             contacts.splice(i, 1);
           }
         }
-        //return contacts; ?
       },
       
       //printAllContactNames - return a string of full names
